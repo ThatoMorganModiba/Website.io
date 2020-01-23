@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Thato's Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="CSS/w3.css" rel="stylesheet" />
+    <link href="CSS/css.css" rel="stylesheet" />
+    <link href="CSS/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+        /* Add a left margin to the "page content that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+
+    </style>
+</head>
+<body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img style="width:100%" src="Image/Thato.jpg" />
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="Home.html">
+            <img src="Image/Home.png">            
+            <p>HOME</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="About Page.html">
+            <img src="Image/Person.png">
+            <p>ABOUT</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="Contact.html">
+            <img src="Image/Contact.png">
+            <p>CONTACT</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-black" href="#">
+            <img src="Image/Social.png">
+            <p>SOCIAL</p> 
+        </a>
+    </nav>
+    <!-- Navbar on small screens (Hidden on the medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="Home.html">HOME</a>
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="About Page.html">ABOUT</a>
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="Contact.html">CONTACT</a>
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="#">SOCIAL</a>
+        </div>
+    </div>
+    <script>
+                //Open and close sidebar
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "60%";
+                    document.getElementById("mySidebar").style.display = "block";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidebar").style.display = "none";
+                }
+    </script>
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="social">
+        <h1 class="w3-text-light-grey">SOCIAL PAGE</h1>
+        <hr class="w3-opacity" style="width:2000px" />
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xxlarge">
+            <form action="http://www.linkedin.com/in/thato-morgan-dikotla-87b537150">
+                <button type="submit">
+                    <img src="Image/Linkedin.jpg" width="180" height="180">
+                </button>
+            </form>
+            <br>
+
+            <form action="http://www.instagram.com/blvck_teedo">
+                <button type="submit">
+                    <img src="Image/Insta.jpg" width="180" height="180">
+                </button>
+            </form>
+            <br>
+            <form action="http://www.facebook.com/thatomorgan.dikotla">
+            <button type="submit">
+                <img src="Image/Facebook.png" width="180" height="180">
+            </button>
+            </form>
+            <br>
+            <form action="https://twitter.com/Blvck_Teedo">
+                <button type="submit">
+                    <img src="Image/Twitter.jpg" width="180" height="180">
+                </button>
+            </form>
+            <br>
+            <p class="w3-medium">
+                Powered by
+                <a class="w3-hover-text-green" href="https://www.thatomorgandikotla.com/default.asp" target="_blank">TD.css</a>
+            </p>
+            <!-- End of footer -->
+        </footer>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div style="background-color:lightgrey;padding:30px"></div>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

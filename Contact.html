@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Thato's Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="CSS/w3.css" rel="stylesheet" />
+    <link href="CSS/css.css" rel="stylesheet" />
+    <link href="CSS/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+        /* Add a left margin to the "page content that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+<body class="w3-black responsive" >
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img style="width:100%" src="Image/Thato.jpg" />
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="Home.html">
+            <img src="Image/Home.png">
+            <p>HOME</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="About Page.html">
+            <img src="Image/Person.png">           
+            <p>ABOUT</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-black" href="#">
+            <img src="Image/Contact.png">
+            <p>CONTACT</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black" href="Social Page.html">
+            <img src="Image/Social.png">
+            <p>SOCIAL</p>
+        </a>
+    </nav>
+    <!-- Navbar on small screens (Hidden on the medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="Home.html">HOME</a>
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="About Page.html">ABOUT</a>
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="#">CONTACT</a>            
+            <a class="w3-bar-item w3-button" style="width:25% !important" href="Social Page.html">SOCIAL</a>
+        </div>
+    </div>
+    <!-- Contact Section-->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h1 class="w3-text-light-grey">CONTACT</h1>
+        <hr class="w3-opacity" style="width:200px" />
+        <div class="w3-section">
+            <p>
+                <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                    <img src="Image/Location.png">
+                </i>
+                Germiston, RSA
+            </p>
+            <p>
+                <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                    <img src="Image/Phone.png">
+                </i>
+                Phone: 0814929608
+            </p>
+             <p>
+                <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                    <img src="Image/Phone.png">
+                </i>
+                Alternative: 0621146275
+            </p>
+            <p>
+                <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                    <img src="Image/Email.png">
+                </i>
+                Email: morgantdikotla@gmail.com
+            </p>
+        </div>
+        
+        <br />
+        <p>
+            Lets get in touch. Send me a message
+        </p>
+        <form action="/action_page.php" target="_black">
+            <p>
+                <input name="Name" class="w3-input w3-padding-16" required="" type="text" placeholder="Name" />
+            </p>
+            <p>
+                <input name="Email" class="w3-input w3-padding-16" required="" type="text" placeholder="Email" />
+            </p>
+            <p>
+                <input name="Subject" class="w3-input w3-padding-16" required="" type="text" placeholder="Subject" />
+            </p>
+            <p>
+                <input name="Message" class="w3-input w3-padding-16" required="" type="text" placeholder="Message" />
+            </p>
+            <p>
+                <button class="w3-button w3-text-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i>
+                    SEND MESSAGE
+                </button>
+            </p>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1411778748343!2d28.20276541470346!3d-26.15953126851112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9513f8b31e0abd%3A0xd4a07b7850e88662!2s66+Eland+St%2C+Elandsfontein+Rail%2C+Germiston%2C+1429!5e0!3m2!1sen!2sza!4v1521112893560" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <!-- End Contact Section-->
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div style="background-color:lightgrey;padding:30px"></div>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

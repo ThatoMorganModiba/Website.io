@@ -1,0 +1,72 @@
+﻿body {
+    inline:style;
+
+}
+
+    .w3-bar-block.w3-center.bar-item {
+        text-align: center
+    }
+
+    .w3-bar-block.w3.bar-item {
+        width: 100%;
+        display: block;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0;
+    }
+
+    .w3-btn, .w3-button {
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .w3-btn, .w3-button {
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        cursor: pointer;
+    }
+
+    a {
+        -webkit-text-decoration-skip: objects;
+    }
+
+    *,*::before, *::after {
+        box-sizing: inherit;
+    }
+
+    .w3-small {
+        font-size: 12px !important;
+    }
+
+/*body, h1, h2, h3, h4, h5, h6*/
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserr",sans-serif;
+    } 
+
+/*html and body*/
+    html, body {
+        line-height: 1.5;
+    }
+
+#oval {
+    width: 200px;
+    height: 100px;
+    background: #e9337c;
+    -webkit-border-radius: 100px / 50px;
+    -moz-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+}
+/*for home page image*/
+.Circle {
+    border-radius: 50%;
+}
+
+
+
